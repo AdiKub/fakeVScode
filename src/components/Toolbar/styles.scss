@@ -1,0 +1,15 @@
+@import '../../assets/styles/variables';
+
+.toolbar {
+  width: 100%;
+  display: flex;
+  background-color: $toolbarBackground;
+
+  &_menu {
+    color: $headerTextColor;
+    margin: 2px 7px;
+    font-size: 0.8em;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+}
