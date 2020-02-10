@@ -1,0 +1,5 @@
+@mixin hightCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

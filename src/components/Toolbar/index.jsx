@@ -17,4 +17,4 @@ const Toolbar = () => {
     </div>
   )
 } 
-export default Toolbar 
+export default Toolbar

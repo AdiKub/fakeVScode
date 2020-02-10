@@ -1,0 +1,71 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  background-color: $foldersBackground;
+
+  &-explorer {
+    @include hightCenter;
+    color: $headerTextColor;
+    width: 100%;
+    height: 30px;
+    font-size: 0.63em;
+    padding-left: 15px;
+    text-transform: uppercase;
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  
+   
+    &-title {
+      font-weight: bold;
+      color: $headerTextColor;
+      padding-left: 3px;
+      align-items: center;
+      display: flex;
+      width: 100%;
+      height: 20px;
+      background-color: $fileNameTadBackgrounf;
+      font-size: 0.63em;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &-content {
+      background-color: $foldersBackground;
+      width: 100%;
+      overflow: hidden;
+      transition: 0.1s;
+
+      &_title {
+        color: $headerTextColor;
+        font-size: 0.63em;
+        padding-left: 15px;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        height: 20px;
+      }
+    }
+
+    &_arrow {
+      transition: 0.1s;
+      margin-right: 8px;
+      height: 8px;
+      width: 8px;
+      border-top: 1px solid $headerTextColor;
+      border-right: 1px solid $headerTextColor;
+
+      &__small {
+        height: 7px;
+        width: 7px;
+      }
+    }
+  }
+}
