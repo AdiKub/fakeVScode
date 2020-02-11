@@ -11,5 +11,8 @@
     font-size: 0.8em;
     font-weight: 600;
     text-transform: capitalize;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
