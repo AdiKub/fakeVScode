@@ -83,7 +83,10 @@ const plugins = () => {
     }),
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin([
-
+      {
+        from: path.resolve(__dirname, 'src/assets/images'),
+        to: path.resolve(__dirname, 'dist/images')
+      }
     ]),
     new MiniCssExtractPlugin({
       filename: filename('css')

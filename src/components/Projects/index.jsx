@@ -2,6 +2,7 @@ import React from 'react'
 
 import './styles.scss';
 
+
 const Projects = () => {
   const projects = {
     'node_modules': ['closedFolder', 1],
@@ -36,8 +37,13 @@ const Projects = () => {
         >
         </div>
       )
+    } else {
+      return (
+        <div className='project_images-wrapper'>
+           <img className='project_images' src={`images/${format[0]}.png`} alt="logo" />
+        </div>
+      )
     }
-   
   }
 
   const setModify = format => {
