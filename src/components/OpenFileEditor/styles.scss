@@ -2,6 +2,15 @@
 @import '../../assets/styles/mixins';
 
 .open-file-editor {
+  padding: 10px;
   height: 100%;
   flex: 1 1 auto;
+  color: white;
+  background: none;
+  border: none;
+  font-size: 0.8em;
+}
+
+.SyntaxHighlighter-back {
+  background: none;
 }
