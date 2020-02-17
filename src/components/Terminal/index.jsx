@@ -1,5 +1,6 @@
 import React from 'react'
 
+import TerminalText from '../TerminalText'
 import './styles.scss';
 
 const Terminal = () => {
@@ -42,21 +43,7 @@ const Terminal = () => {
         </div>
       </div>
       <div className='terminal-window'>
-        <span>
-          + 2 hidden assets
-          Entrypoint main = vendors~main.js vendors~main.js.map main.css main.js main.72d2ab6a381d14294552.hot-update.js main.css.map main.js.map main.72d2ab6a381d14294552.hot-update.js.map
-          [./components/Terminal/styles.scss] 371 bytes  [built]
-              + 390 hidden modules
-          Child html-webpack-plugin for "index.html":
-              1 asset
-              Entrypoint undefined = index.html
-                4 modules
-          Child mini-css-extract-plugin ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!components/Terminal/styles.scss:
-              Entrypoint mini-css-extract-plugin = *
-              [../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./components/Terminal/styles.scss] 1.96 KiB [built]
-                  + 1 hidden module
-          ℹ ｢wdm｣: Compiled successfully.
-        </span>
+      <TerminalText />
       </div>
     </div>
   )
