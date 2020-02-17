@@ -1,0 +1,28 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+.open-file-name {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: auto;
+  width: 100%;
+  background-color: $foldersBackground;
+
+  &-file {
+    height: 30px;
+    width: 150px;
+    
+    margin-right: 1px;
+  }
+}
+
+.file {
+  &-selected {
+    background-color: $codeEditerBackground;
+  }
+  
+  &-unselected {
+    background-color: $fileNameTadBackgrounf;
+  }
+}

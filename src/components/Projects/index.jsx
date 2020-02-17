@@ -31,7 +31,10 @@ const Projects = () => {
       return (
         <div
           style={{
-            transform: `${format[0] === 'closedFolder' ? 'rotate(45deg)' : 'rotate(135deg)'}`
+            transform: `${format[0] === 'closedFolder' 
+              ? 'rotate(45deg)' 
+              : 'rotate(135deg)'
+            }` 
           }}
          className='sidebar-item_arrow sidebar-item_arrow__small'
         >
@@ -40,7 +43,11 @@ const Projects = () => {
     } else {
       return (
         <div className='project_images-wrapper'>
-           <img className='project_images' src={`images/${format[0]}.png`} alt="logo" />
+           <img 
+            className='project_images' 
+            src={`images/${format[0]}.png`} 
+            alt="logo" 
+           />
         </div>
       )
     }

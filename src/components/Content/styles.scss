@@ -6,6 +6,12 @@
   display: flex;
   flex: 1 1 auto;
   background-color: #1d1d1d;
+
+  &-editor-area {
+    display: flex;
+    flex-direction: column;
+    width: 100%;   
+  }
 }
 
 .activity-bar {
