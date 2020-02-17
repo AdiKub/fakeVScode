@@ -1,12 +1,8 @@
 @import '../../assets/styles/variables';
 
-body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
 .header {
+  background: linear-gradient(0deg, #666060 0%, $headerBackground 100%);
   color: $headerTextColor;
-  background-color: $headerBackground;
   height: 30px;
   width: 100%;
   display: flex;

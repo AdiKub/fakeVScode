@@ -1,0 +1,28 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+
+.terminal-text {
+  height: 100%;
+  overflow-y: scroll;
+  color: white;
+  display: flex;
+  flex-direction: column;
+
+  &_user {
+    color: $tagNameColor;
+    font-weight: bold;
+  }
+
+  &_path {
+    color: $terminalPath;
+    font-weight: bold;
+  } 
+}
+#terminalText::-webkit-scrollbar {
+  width: 10px;
+}
+
+#terminalText::-webkit-scrollbar-thumb {
+  background:  $toolbarBackground;
+}

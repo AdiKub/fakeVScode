@@ -1,0 +1,21 @@
+@import '../../assets/styles/variables';
+
+.content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex: 1 1 auto;
+  background-color: #1d1d1d;
+
+  &-editor-area {
+    display: flex;
+    flex-direction: column;
+    width: 100%;   
+  }
+}
+
+.activity-bar {
+  width: 45px;
+  height: 100%;
+  background-color: $fileNameTadBackgrounf;
+}

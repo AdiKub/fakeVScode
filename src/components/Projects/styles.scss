@@ -1,0 +1,51 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+.project {
+
+	&_js_logo {
+		font-family: Verdana, Geneva, Tahoma, sans-serif;
+		font-size: 0.9em;
+	}
+
+	&-wrapper {
+		display: flex;
+		width: 100%;
+		padding: 0 10px;
+		align-items: center;
+		flex-wrap: nowrap;
+		&:hover {
+			cursor: pointer;
+			background-color: $fileNameTadBackgrounf;
+		}
+	}
+
+	&-modified {
+		display: flex;
+		align-items: center;
+
+		&_folder {
+			opacity: 0.5;
+			height: 5px;
+			width: 5px;
+			border-radius: 50%;
+			background-color: #fcc695;
+		}
+		&_color {
+			font-size: 0.6em;
+			color: #fcc695
+		}
+	}
+
+	&_images {
+
+		&-wrapper {
+			margin-right: 5px;
+			width: 10px;
+			height: 10px;
+		}
+		height: 100%;
+		width: 100%;
+		object-fit: scale-down;
+	}
+}

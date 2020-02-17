@@ -1,0 +1,95 @@
+@import '../../assets/styles/variables';
+@import '../../assets/styles/mixins';
+
+.terminal {
+  padding: 0 15px;
+  height: 150px;
+  width: 100%;
+  border-top: 1px solid $fileNameTadBackgrounf;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &-tabs {
+    padding: 5px 0;
+    height: auto;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    &-names {
+      display: flex;
+      width: auto;
+      height: 25px;
+    }
+
+    &_name {
+      display: flex;
+      align-items: center;
+      color: $tagArrowColor;;
+      text-transform: uppercase;
+      margin-right: 20px;
+      font-size: 0.7em;
+      height: 100%;
+
+      &__selected {
+        color: $headerTextColor;
+        border-bottom: 1px solid $headerTextColor;
+      }
+    }
+
+    &-buttons {
+      display: flex;
+      align-items: center;
+      height: 25px;
+
+      &__margin {
+        margin-right: 15px;
+      }
+
+      &__select {
+        height: 20px;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5px;
+        width: 150px;
+        background-color: $toolbarBackground;
+        font-size: 0.7em;
+        color: $headerTextColor;
+
+      }
+
+      &__plus {
+        font-size: 1.5em;
+        color: $headerTextColor;
+      }
+
+      &__split {
+        height: 12px;
+        width: 11px;
+        border: 1px solid $headerTextColor;
+
+        &_line {
+          height: 11px;
+          width: 5px;
+          border-right: 1px solid $headerTextColor;
+        }
+      }
+
+      &__close {
+        color: $headerTextColor;
+        transform: rotate(45deg);
+        font-size: 1.2em;
+      }
+    }
+  }
+
+  &-window {
+    height: 110px;
+    width: 100%;
+    color: white;
+    font-size: 0.7em;
+  }
+}
